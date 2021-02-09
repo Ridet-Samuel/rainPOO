@@ -1,10 +1,11 @@
 #Auteur LOLA C.
 from pygame import Vector2
-import core
+
 import random
 import pygame
 from math import sqrt
 
+from p5 import core
 
 balls = []
 player= []
@@ -17,7 +18,7 @@ r=10
 def setup() :
     print("Setup START---------")
     global balls, player, creeps, r
-    core.WINDOW_SIZE = [800, 800]
+    core.WINDOW_SIZE = [1800, 1000]
 
 
     player = player + [200,200,0,0,(255,0,0),r]

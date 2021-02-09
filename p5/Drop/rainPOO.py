@@ -1,12 +1,12 @@
-import core
-from Drop.drop import Drop
+from p5 import core
+from p5.Drop.drop import Drop
 
 drops = []
 
 def setup():
     print("Setup START---------")
     core.fps = 30
-    core.WINDOW_SIZE = [1500, 800]
+    core.WINDOW_SIZE = [500, 400]
 
     for i in range(0,1000):
         drops.append(Drop(400))
@@ -19,4 +19,3 @@ def run():
 
 
 core.main(setup,run)
-
